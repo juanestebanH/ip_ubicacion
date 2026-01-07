@@ -69,7 +69,7 @@ function dibujarResultado(ip, lugar, region, postal, hora, isp) {
 }
 
 async function obtenerDatosIp(ip) {
-  const response = await fetch(`https://ip-api.com/json/${ip}`);
+  const response = await fetch(`http://ip-api.com/json/${ip}`);
   if (!response.ok) {
     throw new Error("Error al obtener los datos");
   }
