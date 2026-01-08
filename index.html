@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | IP Address Tracker JH</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
-  <script src="main.js"></script>
-</head>
-<body>
-
-  <main>
-    <article class="cont_principal">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | IP Address Tracker JH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <article class="cont_principal">
         <article class="cont_contenido">
           <h1>IP Address Tracker</h1>
           <div class="cont_busqueda">
-            <input id="ipBuscar" type="text">
+            <input id="ipBuscar" type="text" />
             <button id="buscar" type="submit">></button>
           </div>
 
           <article class="cont_resultado">
-              <div class="card_resul">
-                <p>IP ADDERESS</p>
-                <H3 id="ip"></H3>
-              </div>
-              <div class="card_resul">
-                <p>LOCATION</p>
-                <H3 id="lugar">Brooklyn, NY 10001</H3>
-              </div>
-              <div class="card_resul">
-                <p>TIMEZONE</p>
-                <H3 id="hora">UTC-05:00</H3>
-              </div>
-              <div class="card_resul">
-                <p>ISP</p>
-                <H3 id="isp">SpaceX Starlink</H3>
-              </div>
+            <div class="card_resul">
+              <p>IP ADDERESS</p>
+              <h3 id="ip"></h3>
+            </div>
+            <div class="card_resul">
+              <p>LOCATION</p>
+              <h3 id="lugar">no disponible</h3>
+            </div>
+            <div class="card_resul">
+              <p>TIMEZONE</p>
+              <h3 id="hora">no disponible</h3>
+            </div>
+            <div class="card_resul">
+              <p>ISP</p>
+              <h3 id="isp">no disponible</h3>
+            </div>
           </article>
         </article>
-    </article>
-    <div id="map">
-
-    </div>
-  </main>
- 
-</body>
+      </article>
+      <div id="map"></div>
+    </main>
+  </body>
 </html>
