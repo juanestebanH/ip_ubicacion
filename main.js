@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     dibujarMapa(ipReal);
   } catch (error) {
     console.error('No se pudo obtener la IP real', error);
-    dibujarMapa(); // fallback
+    dibujarMapa();
   }
 });
 
@@ -25,7 +25,9 @@ function dibujarMapa(ip = '') {
   obtenerDatosIp(ip)
     .then((data) => {
       if (data.status !== 'success') {
-        alert('IP desconocida');
+        alert(
+          'No se encontraron datos para la IP proporcionada, vuelva a cargar la página.'
+        );
         return;
       }
 
@@ -68,7 +70,7 @@ function dibujarMapa(ip = '') {
     })
     .catch((err) => {
       console.error(err);
-      alert('Error al obtener datos de la IP');
+      alert('vuelva a cargar la página.');
     });
 }
 
